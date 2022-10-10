@@ -1,0 +1,27 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <!-- <div><a href="#" class="navbar-brand  mb-0 h1">Customer Deatils</a></div> -->
+
+    <div><a href="#" class="navbar-brand  "><img style="width: 100%; height:60px " src="../../assets/MCB.png" /></a>
+    </div>
+
+    <div class="float-right">
+      <ul class="navbar-nav ">
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link navbar-brand mb-0 h3 ">Home
+          </a></li>
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/view" class="nav-link navbar-brand mb-0 h3 ">View
+            Transactions</a></li>
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/makeTransaction" class="nav-link navbar-brand mb-0 h3">New
+            Transection</a></li>
+        <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login"
+            class="nav-link navbar-brand mb-0 h3">Login</a></li>
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout"
+            class="nav-link navbar-brand mb-0 h3">Logout</a></li>
+
+
+      </ul>
+    </div>
+
+  </nav>
+
+</header>

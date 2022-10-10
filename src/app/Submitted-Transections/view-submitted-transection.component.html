@@ -1,0 +1,33 @@
+
+
+
+  
+<br/> <br />
+<hr />
+<h2 class="font-weight-light  text-large" >View Submitted Transactions</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Customer Name</th>
+            <th> Transfer Amount</th>
+            <th> Tranfser Currency</th>
+            <th> Reference Number</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of employees" >
+            <td> {{ employee.id }} </td>
+            <td> {{ employee.name }} </td>
+            <td> {{ employee.mailId }} </td>
+            <td> {{ employee.dept }} </td>
+         
+           
+            <td>
+                <button (click) = "updateEmployee(employee.id)" class = "btn btn-outline-primary btn-sm"> Update</button>
+                <button (click) = "deleteEmployee(employee.id)" class = "btn  btn-outline-danger btn-sm " style="margin-left: 5px"> Delete</button>
+                <button (click) = "employeeDetails(employee.id)" class = "btn btn-outline-info btn-sm" style="margin-left: 5px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
