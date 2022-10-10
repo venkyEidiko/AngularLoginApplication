@@ -12,7 +12,7 @@ import { TransectionData } from '../transection-data';
 export class MakeTransectionComponent implements OnInit {
 
   
-  transectionData = new TransectionData("",1,7995391069,"hyd",1000,"AED","Curepipe",5100021,"","");
+  transectionData = new TransectionData("",1,7995391069,"Hyd",1000,"AED","Curepipe",5100021,"","");
 
   // transectionData : TransectionData;
 
